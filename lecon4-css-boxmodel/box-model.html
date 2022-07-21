@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--Hovers is a pseudo css classes that allow us to make some effect oporation as hover the button
+text and so on.
+Transition is a property that allow us to apply a time of react on an element. It take two principal
+value such that the css property and the time of transition on that property
+Shadow: allow us to add some shadow effect on our button,texy etc. It takes forth value such that:
+the horizon value, the vertical value, the blour and rgba function. Lest us see the example on the 
+code bellow -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="button.css">
+    <title>Learn style page</title>
+    <style>
+        .subscribe-button{
+            background-color: rgb(238, 32, 32);
+            color: white;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            margin-right: 8px;
+            margin-left: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 16px;
+            padding-right: 16px;
+            transition: opacity 0.15s;
+            vertical-align: top; 
+        }
+
+        .subscribe-button:hover{
+            opacity:0.8 ;
+        }
+
+        .subscribe-button:active{
+            opacity: 0.5;
+        }
+        .join-button{
+            background-color: white;
+            color: rgb(7, 139, 247);
+            border-color:rgb(29, 155, 240);
+            border-width:1px;
+            border-radius: 2px;
+            cursor: pointer;
+            margin-right: 8px;
+            padding-top: 9px;
+            border-style: solid;
+            padding-bottom: 9px;
+            padding-left: 16px;
+            padding-right: 16px;
+            transition: background-color 0.15s,color 0.15s;
+            vertical-align: top;
+        }
+
+        .join-button:hover{
+            background-color:rgb(29, 155, 240) ;
+            color: white;
+            border: none;
+        }
+        .join-button:active{
+            opacity: 0.7;
+        }
+
+        .twitter-button{
+            background-color: rgb(29, 155, 240);
+            color: white;
+            border: none;
+            border-radius: 18px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 15px;
+            transition: box-shadow 0.15s;
+            vertical-align: top;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 16px;
+            padding-right: 16px;
+            margin-right: 8px;
+        } 
+
+        .twitter-button:hover{
+           box-shadow:5px 5px 10px rgba(0,0,0, 0.15);
+        }
+
+        .uber-button{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            border: none;
+            border-radius: 2px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    </style>
+</head>
+<body>
+    <button class="subscribe-button">SUBSCRIBE</button>
+    <button class="join-button">JOIN</button>
+    <button class="twitter-button">Tweet</button>
+    <button class="uber-button">Request now</button>
+</body>
+</html>
